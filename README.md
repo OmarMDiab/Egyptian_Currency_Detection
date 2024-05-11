@@ -9,7 +9,7 @@ The application uses **our trained YoloV8 model** to detect Egyptian currency de
 
 - **Total Money Display:** It displays the total sum of money detected in the frame.
 
-- **Text-to-Speech Feature:** Pressing the **'t'** key triggers a feature that audibly announces the total amount of money detected and lists the detected currencies from right to left.
+- **Text-to-Speech Feature:** Pressing the **'t'** key triggers a feature that audibly announces the total amount of money detected and lists the detected currencies from right to left (relative to the camera)
 
 ## See this video ==>  [Talkative Currency Detection Video](https://drive.google.com/file/d/12ITHoKfdFgiIFR23oXIu5Y4Co4MBtRlI/view?usp=sharing)
 
