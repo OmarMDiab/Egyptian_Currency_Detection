@@ -26,4 +26,5 @@ The model was trained on the
 - **pyttsx3**
 
 ## Authors
-This project is an Egyptian currency detection application developed by Omar Diab and under the supervision of **Dr. Alaa Hamdy.** 
+- **Omar Diab**
+- Under the supervision of **Dr. Alaa Hamdy.** 
