@@ -31,7 +31,7 @@ engine.setProperty('volume', 1)
 model = YOLO('Trained_Models/best_15e.pt')
 
 # Initialize camera
-cap = cv2.VideoCapture(0)  
+cap = cv2.VideoCapture(1)  
 #   >>>>> Note: If you want to use the another camera (eg: wireless), replace [0] with [1]
 
 money = {10: "5 Pounds", 1: "5 Pounds", 0: "10 Pounds", 3: "10 Pounds", 9: "20 Pounds", 5: "20 Pounds", 8: "50 Pounds", 2: "50 Pounds", 4: "100 Pounds", 11: "100 Pounds", 6: "200 Pounds", 7: "200 Pounds"}
