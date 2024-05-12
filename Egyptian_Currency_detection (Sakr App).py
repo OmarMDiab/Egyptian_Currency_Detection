@@ -20,13 +20,15 @@ from ultralytics import YOLO
 import pyttsx3
 engine = pyttsx3.init()
 
-# Set the voice rate
-engine.setProperty('rate', 290)
-engine.setProperty('volume', 1)
+# control the speed of the speech from there: -
+engine.setProperty('rate', 200)
+
+# set to highest volume 
+engine.setProperty('volume', 1) 
 
 
 # Load YOLO model
-model = YOLO('weights/best_15e.pt')
+model = YOLO('Trained_Models/best_15e.pt')
 
 # Initialize camera
 cap = cv2.VideoCapture(0)  
