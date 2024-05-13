@@ -20,8 +20,8 @@ from ultralytics import YOLO
 import pyttsx3
 engine = pyttsx3.init()
 
-# control the speed of the speech from there: -
-engine.setProperty('rate', 200)
+# control the speed of the speech from here: -
+engine.setProperty('rate', 190)
 
 # set to highest volume 
 engine.setProperty('volume', 1) 
@@ -31,10 +31,16 @@ engine.setProperty('volume', 1)
 model = YOLO('Trained_Models/best_15e.pt')
 
 # Initialize camera
-cap = cv2.VideoCapture(1)  
+cap = cv2.VideoCapture(0)  
 #   >>>>> Note: If you want to use the another camera (eg: wireless), replace [0] with [1]
 
 money = {10: "5 Pounds", 1: "5 Pounds", 0: "10 Pounds", 3: "10 Pounds", 9: "20 Pounds", 5: "20 Pounds", 8: "50 Pounds", 2: "50 Pounds", 4: "100 Pounds", 11: "100 Pounds", 6: "200 Pounds", 7: "200 Pounds"}
+
+engine.say("Welcome to Sakr: An Egyptian Currency Detection App")
+engine.say("Press 't' to speak the total money and the detected currencies")
+engine.say("You can Press 'q' to quit the app")
+engine.say("Enjoy!")
+engine.runAndWait()
 
 while True:
     ret, frame = cap.read()  # Read frame from camera
@@ -66,16 +72,28 @@ while True:
                 money_positions.append((x1,Currency))  # Store x-coordinate of the currency boxq
 
         if total_money > 0: 
-            cv2.putText(frame, f'Total Money: {total_money} Pounds', (10, 40), cv2.FONT_HERSHEY_TRIPLEX, 1, (0, 250, 0), 2)
-
-            # Speak the total money and the detected currencies when 't' is pressed ^^
-            if cv2.waitKey(1) & 0xFF == ord('t'):
-                engine.say("Total Money: " + str(total_money)+" Pounds")
+                # Speak the total money and the detected currencies when 't' is pressed ^^
+                cv2.putText(frame, f'Total Money: {total_money} Pounds', (10, 40), cv2.FONT_HERSHEY_TRIPLEX, 1, (0, 250, 0), 2)
+        
+        
+    if cv2.waitKey(1) & 0xFF == ord('t'):
+        
+        if total_money > 0:
+            
+            
+            if num_classes > 1:
+                engine.say(f"You have {num_classes} Currencies in the frame of Total Money: " + str(total_money)+" Egyptian Pounds")
+                
                 engine.say("From Right to Left you have: ")
                 sorted_money_positions = sorted(money_positions, key=lambda item: item[0], reverse=True)
                 for x, y in sorted_money_positions:
                     engine.say(y)
-                engine.runAndWait()
+            else:
+                engine.say("You have 1 paper currency of " + str(total_money) + " Egyptian Pounds")
+            engine.runAndWait()
+        else:
+            engine.say("There are no Currencies Detected in the frame!")
+            engine.runAndWait()
 
 
     cv2.imshow('Sakr: Egyptian Currency Detection', frame)
@@ -87,3 +105,6 @@ while True:
 # Release resources
 cap.release()
 cv2.destroyAllWindows()
+
+engine.say("Thank you for using my application. Have a nice day!")
+engine.runAndWait()
