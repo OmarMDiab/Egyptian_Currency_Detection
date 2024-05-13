@@ -4,14 +4,25 @@ The application uses **our trained YoloV8 model** to detect Egyptian currency de
 
 
 ## Features
+
 - **Real-Time Detection:** The script opens the camera feed and continuously detects Egyptian currency notes within the frame.
-
-
 - **Total Money Display:** It displays the total sum of money detected in the frame.
 
-- **Text-to-Speech Feature:** Pressing the **'t'** key triggers a feature that audibly announces the total amount of money detected and lists the detected currencies from right to left (relative to the camera)
+<div style="display: flex; justify-content: center;">
+    <img src="https://github.com/OmarMDiab/Sakr-Egyptian-Currency-Detection/blob/main/Sample_Runs/Detection%20Accuracy.gif" alt="Sample Run" width="400"/>
+    <img src="https://github.com/OmarMDiab/Sakr-Egyptian-Currency-Detection/blob/main/Sample_Runs/Counting_Currency.gif" alt="Sample Run" width="400"/>
+</div>
 
-## See this video ==>  [Talkative Currency Detection Video](https://drive.google.com/file/d/12ITHoKfdFgiIFR23oXIu5Y4Co4MBtRlI/view?usp=sharing)
+
+  
+
+  
+- **Text-to-Speech Feature:** Pressing the 't' key triggers a feature that audibly announces the total amount of money detected and lists the detected currencies from right to left (relative to the camera)
+
+
+
+
+
 
 
 
