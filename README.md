@@ -1,6 +1,6 @@
 # Egyptian Currency Detection 𓂀 𓁈 𓀛 𓁀 𓁳 𓀮 
 
-The application uses **our trained YoloV8 model** to detect Egyptian currency denominations in real-time using a camera feed.
+The application uses **YoloV8 model** to detect Egyptian currencies in real-time using a camera feed.
 
 
 ## Features
@@ -16,7 +16,6 @@ The application uses **our trained YoloV8 model** to detect Egyptian currency de
 
   
 
-  
 - **Text-to-Speech Feature:** Pressing the 't' key triggers a feature that audibly announces the total amount of money detected and lists the detected currencies from right to left (relative to the camera)
 
 
@@ -32,9 +31,9 @@ The model was trained on the
 [Banha University Egyptian Currency Dataset ](https://universe.roboflow.com/banha-university-dxs4z/egyptian-currency-psnkr/dataset/3)available on Roboflow Universe.
 
 ## what you need to install first
-- **OpenCV**
-- **Ultralytics YOLO (ultralytics)**
-- **pyttsx3**
+- **OpenCV:** To use your camera for detection
+- **Ultralytics YOLO (ultralytics):** To use/Train the YoloV8 Model
+- **pyttsx3:** To get the Sound Feedback
 
 ## Authors
 - **Omar Diab**
