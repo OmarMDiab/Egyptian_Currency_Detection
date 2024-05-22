@@ -34,13 +34,13 @@ model = YOLO('Trained_Models/best_15e.pt')
 cap = cv2.VideoCapture(0)  
 #   >>>>> Note: If you want to use the another camera (eg: wireless), replace [0] with [1]
 
-money = {10: "5 Pounds", 1: "5 Pounds", 0: "10 Pounds", 3: "10 Pounds", 9: "20 Pounds", 5: "20 Pounds", 8: "50 Pounds", 2: "50 Pounds", 4: "100 Pounds", 11: "100 Pounds", 6: "200 Pounds", 7: "200 Pounds"}
+money = {10: "5 Pounds", 1: "5 Pounds", 0: "10 Pounds", 3: "10 Pounds", 9: "20 Pounds", 5: "20 Pounds", 8: "50 Pounds", 2: "50 Pounds", 4: "100 Pounds", 11: "100 Pounds", 6: "200 Pounds Front", 7: "200 Pounds Back"}
 
-engine.say("Welcome to Sakr: An Egyptian Currency Detection App")
-engine.say("Press 't' to speak the total money and the detected currencies")
-engine.say("You can Press 'q' to quit the app")
-engine.say("Enjoy!")
-engine.runAndWait()
+# engine.say("Welcome to Sakr: An Egyptian Currency Detection App")
+# engine.say("Press 't' to speak the total money and the detected currencies")
+# engine.say("You can Press 'q' to quit the app")
+# engine.say("Enjoy!")
+# engine.runAndWait()
 
 while True:
     ret, frame = cap.read()  # Read frame from camera
