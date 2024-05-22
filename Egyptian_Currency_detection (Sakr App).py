@@ -8,9 +8,10 @@ Under the supervision of:
 Dataset i trained on: https://universe.roboflow.com/banha-university-dxs4z/egyptian-currency-psnkr/dataset/3      
         
 >> The script will open the camera and start detecting the Egyptian currency in real-time.
->> THis Project Supports the following Currencies:  5 Pounds, 10 Pounds, 20 Pounds, 50 Pounds, 100 Pounds, 200 Pounds
+>> This Project Supports the following Currencies:  5 Pounds, 10 Pounds, 20 Pounds, 50 Pounds, 100 Pounds, 200 Pounds
 >> The script will also display the total money detected in the frame.
 >> Added a feature to speak the total money and the detected currencies when ['t'] is pressed.
+
 >> Enjoy ^^
 """
 
@@ -36,18 +37,17 @@ cap = cv2.VideoCapture(0)
 
 money = {10: "5 Pounds", 1: "5 Pounds", 0: "10 Pounds", 3: "10 Pounds", 9: "20 Pounds", 5: "20 Pounds", 8: "50 Pounds", 2: "50 Pounds", 4: "100 Pounds", 11: "100 Pounds", 6: "200 Pounds Front", 7: "200 Pounds Back"}
 
-# engine.say("Welcome to Sakr: An Egyptian Currency Detection App")
-# engine.say("Press 't' to speak the total money and the detected currencies")
-# engine.say("You can Press 'q' to quit the app")
-# engine.say("Enjoy!")
-# engine.runAndWait()
+engine.say("Welcome to Sakr: An Egyptian Currency Detection App")
+engine.say("Press 't' to speak the total money and the detected currencies")
+engine.say("You can Press 'q' to quit the app")
+engine.runAndWait()
 
 while True:
     ret, frame = cap.read()  # Read frame from camera
 
 
     # Add Gaussian blur to the frame (To Focus in important features only and reduce [Noise Features])
-    model_frame = cv2.GaussianBlur(frame, (7, 7), 0)
+    model_frame = cv2.GaussianBlur(frame, (5, 5), 0)
 
     # Perform inference
     results = model.predict(source=model_frame, conf=0.5,verbose=False,save=False)
