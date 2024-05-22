@@ -50,7 +50,7 @@ while True:
     model_frame = cv2.GaussianBlur(frame, (5, 5), 0)
 
     # Perform inference
-    results = model.predict(source=model_frame, conf=0.5,verbose=False,save=False)
+    results = model.predict(source=model_frame, conf=0.4,verbose=False,save=False)
 
     # Track the total money
     total_money = 0
