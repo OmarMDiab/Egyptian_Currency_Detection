@@ -18,7 +18,7 @@ The application uses **YoloV8 model** to detect Egyptian currencies in real-time
 
 - **Text-to-Speech Feature:** Pressing the 't' key triggers a feature that audibly announces the total amount of money detected and lists the detected currencies from right to left (relative to the camera)
 
-[Sound Feedback On Detected Currencies (Video)](https://drive.google.com/file/d/12EAiGe2aaU_pwLoC-RN-uz6NkXMH03Xr/preview).
+### [See Also, Sound Feedback (Video)](https://drive.google.com/file/d/12EAiGe2aaU_pwLoC-RN-uz6NkXMH03Xr/preview)
 
 <video width="640" height="480" controls autoplay>
   <source src="Sample_Runs/Sound_Feedback.mp4" type="video/mp4">
