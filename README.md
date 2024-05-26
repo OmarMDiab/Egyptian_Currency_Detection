@@ -38,6 +38,3 @@ The model was trained on the
 - **Ultralytics YOLO (ultralytics):** To use/Train the YoloV8 Model
 - **pyttsx3:** To get the Sound Feedback
 
-## Authors
-- **Omar Diab**
-- Under the supervision of **Dr. Alaa Hamdy.** 
