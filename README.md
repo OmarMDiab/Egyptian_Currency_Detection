@@ -8,9 +8,9 @@ The application uses **YoloV8 model** to detect Egyptian currencies in real-time
 - **Real-Time Detection:** The script opens the camera feed and continuously detects Egyptian currency notes within the frame.
 - **Total Money Display:** It displays the total sum of money detected in the frame.
 
-<div style="display: flex; justify-content: center;">
+<div style="display: flex; justify-content: center; align-items: center;">
     
-<img src="https://github.com/OmarMDiab/Sakr-Egyptian-Currency-Detection/blob/main/Sample_Runs/Counting_Currency.gif" alt="Sample Run" width="400"/>
+<img src="https://github.com/OmarMDiab/Sakr-Egyptian-Currency-Detection/blob/main/Sample_Runs/Counting_Currency.gif" alt="Sample Run" height = 350/>
 </div>
 
 
