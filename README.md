@@ -9,7 +9,7 @@ The application uses **YoloV8 model** to detect Egyptian currencies in real-time
 - **Total Money Display:** It displays the total sum of money detected in the frame.
 
 <div style="display: flex; justify-content: center;">
-    <img src="https://github.com/OmarMDiab/Sakr-Egyptian-Currency-Detection/blob/main/Sample_Runs/Detection%20Accuracy.gif" alt="Sample Run" width="400"/>
+    
     <img src="https://github.com/OmarMDiab/Sakr-Egyptian-Currency-Detection/blob/main/Sample_Runs/Counting_Currency.gif" alt="Sample Run" width="400"/>
 </div>
 
