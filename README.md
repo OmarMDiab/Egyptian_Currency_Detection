@@ -10,7 +10,7 @@ The application uses **YoloV8 model** to detect Egyptian currencies in real-time
 
 <div style="display: flex; justify-content: center;">
     
-    <img src="https://github.com/OmarMDiab/Sakr-Egyptian-Currency-Detection/blob/main/Sample_Runs/Counting_Currency.gif" alt="Sample Run" width="400"/>
+<img src="https://github.com/OmarMDiab/Sakr-Egyptian-Currency-Detection/blob/main/Sample_Runs/Counting_Currency.gif" alt="Sample Run" width="400"/>
 </div>
 
 
